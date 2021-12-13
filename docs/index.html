@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -51,27 +51,43 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <p>linkedin: <a href="http://linkedin.com/in/jordan-simon-a03b91171">linkedin</a></p>
       
       <hr class="w3-opacity">
-      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom"><a href="/Resume.pdf" download="Resume">Download Resume</a></button></p>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom"><a href="docs/Resume.pdf" download="Resume">Download Resume</a></button></p>
       <hr class="w3-opacity">
-      
       </div>
     </div>
   </div>
 
-   <!-- Photo grid -->
-   <div class="w3-row" id="port">
-    <div class="w3-third">
-      <a href="https://github.com/renzheng11/twitbot"></a><img src="img/Twitter Bot.PNG" style="width:120%;" onclick="onClick(this)" alt="Twitter bot page">
-      <img src="img/Totoro.png" style="width:120%; height: 0%;" onclick="onClick(this)" alt="2D image of totoro">
-    </div>
-
-    <div class="w3-third">
-      <a href="https://github.gatech.edu/jyang475/cs2340-group20-hikari"> <img src="img/Hikari.PNG" style="width:40%; height: 65%; position: absolute; right: 0%;" onclick="onClick(this)" alt="Hikari dungeon crawler game start screen "></a>
-    </div>
-    
+   <!-- Resume -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="resume">
+    <hr class="w3-opacity">
+    <embed src="Resume.pdf#zoom=100" width="800px" height="1100px" frameBorder="100"scrolling="auto"/>
+    <hr class="w3-opacity">
   </div>
 
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+      <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption"></p>
+      </div>
+    </div>
+
+         <!-- Photo grid -->
+         <div class="w3-row" id="port">
+          <div class="w3-third">
+            <a href="https://github.com/renzheng11/twitbot"></a><img src="img/twit.PNG" style="height: 0%;" onclick="onClick(this)" alt="Twitter bot page">
+            <img src="img/HashDash.png" style="width:650px; height: 400px;" onclick="onClick(this)" alt="2D image of totoro">
+          </div>
+      
+          <div class="w3-third">
+            <a href="https://github.gatech.edu/jyang475/cs2340-group20-hikari"> <img src="img/Hikari.PNG" style="width:34%; height: 45%; position: absolute; right:7.8%;" onclick="onClick(this)" alt="Hikari dungeon crawler game start screen "></a>
+          </div>
+          
+        </div>
+
   <!-- Pagination -->
+  <div></div>
   <div class="w3-center w3-padding-32">
     <div class="w3-bar" style="margin-left: 20%;">
       <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
@@ -81,18 +97,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
-  </div>
-  
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-  
+  </div>  
   <!-- Contact section -->
   <div class="w3-container w3-center w3-light-grey w3-padding-32 w3-padding-large" id="contact">
     <div class="w3-content" style="max-width:600px; margin-left: 40%;">
@@ -123,7 +128,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
         <h3>Links</h3>
       </div>
       </div>
-
     </div>
   </footer>
   
